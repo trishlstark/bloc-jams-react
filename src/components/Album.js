@@ -5,13 +5,43 @@ class Album extends Component {
   constructor(props){
     super(props);
 
-    const specificAlbum = albumData.find(a => {
+    const album = albumData.find(a => {
       return a.slug === this.props.match.params.slug
     });
 
     this.state ={
-      album: specificAlbum
+      album: album,
+      currentSong: album.songs[0],
+      isPlaying: false
     };
+
+    this.audioElement = document.createElement('audio');
+    this.audioElement.src=album.songs[0].audioSrc;
+  }
+
+  play(){
+    this.audioElement.play();
+    this.setState({ isPlaying: true });
+  }
+
+  pause(){
+    this.audioElement.pause();
+    this.setState({ isPlaying: false});
+  }
+
+  setSong(song){
+    this.audioElement.src = song.audioSrc;
+    this.setState({ currentSong:song });
+  }
+
+  handleSongClick(song){
+    const isSameSong = this.state.currentSong === song;
+    if(this.state.isPlaying && isSameSong){
+      this.pause();
+    }else{
+      if(!isSameSong) {this.setSong(song);}
+      this.play();
+    }
   }
 
   formatTime(seconds){
@@ -43,8 +73,14 @@ class Album extends Component {
             </colgroup>
             <tbody>
               {this.state.album.songs.map( (song, index) =>
-                  <tr className="song" key={index}>
-                  <td className="song-number">{index +1}</td>
+                  <tr className="song" key={index} onClick={() => this.handleSongClick(song)}>
+                  <td className="song-actions">
+                    <button>
+                      <span className="song-number">{index+1}</span>
+                      <span className="ion-play"></span>
+                      <span className="ion-pause"></span>
+                      </button>
+                  </td>
                   <td className="song-title">{song.title}</td>
                   <td className="song-duration">{this.formatTime(song.duration)}</td>
                   </tr>
