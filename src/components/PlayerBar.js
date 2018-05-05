@@ -17,6 +17,7 @@ class PlayerBar extends Component {
         </section>
         <section id="time-control">
             <div className="current-time">{this.props.formatTime(this.props.currentTime)}</div>
+            <div className="total-time">{this.props.formatTime(this.props.duration - this.props.currentTime)}</div>
             <input
               type="range"
               className="seek-bar"
