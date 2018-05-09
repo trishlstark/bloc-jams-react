@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
+
+.landing{
+  width: 600px;
+  margin: auto;
+}
+
+.hero-title{
+  text-align: center;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 50px;
+  font-style: italic;
+  padding-bottom:20px;
+  color: #5D001E;
+  text-shadow: 2px 2px #fffff0;
+}
+
+.selling-points{
+  text-align: left;
+}
+
+.point-title{
+  border-bottom: 1px solid #5D001E;
+
+
+}
+
+.point{
+  padding-bottom: 50px;
+}

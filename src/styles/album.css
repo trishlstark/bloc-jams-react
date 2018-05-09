@@ -1,0 +1,61 @@
+.album{
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-top:20px;
+}
+
+#album-info img{
+ margin:auto;
+ padding: 10px;
+}
+
+#album-cover-art{
+  width: 300px;
+  margin-top: 20px;
+  border: 4px solid #5D001E;
+}
+
+#album-title{
+ margin-bottom: 5px;
+}
+
+.artist{
+  margin: 5px;
+}
+
+#release-info {
+	font-style: italic;
+}
+
+#song-list{
+  width: 75%;
+  margin: 75px auto 20px auto;
+  font-weight: 550;
+}
+
+.song-actions button {
+  border:none;
+  font-size: 1em;
+  background-color: #5D001E;
+  color: white;
+  box-shadow: 2px 2px #808080	;
+  padding: 5px;
+}
+
+.hidden-number{
+  display: none;
+}
+
+.song-actions button:hover .song-number {
+  display: none;
+}
+
+.song-actions button .ion-ios-play{
+  display: none;
+}
+
+.song-actions button:hover .ion-ios-play{
+  display: block;
+}

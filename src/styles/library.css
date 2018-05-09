@@ -1,0 +1,31 @@
+.library{
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+}
+
+#coverimage{
+  width: 300px;
+  margin: 20px 0px 20px 0px;
+  border: 4px solid #5D001E;
+  box-shadow: 5px 5px #808080	;
+
+}
+
+.artist{
+  font-size: 30px;
+  font-weight: 700;
+  color: #5D001E;
+}
+
+a{
+  text-decoration: none;
+  color: #5D001E;
+}
+
+.title{
+  font-weight: 700;
+  font-size: 20px;
+}

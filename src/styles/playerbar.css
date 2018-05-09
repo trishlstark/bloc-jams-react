@@ -1,0 +1,65 @@
+
+.player-bar button {
+  border: none;
+  background: none;
+  color: white;
+  font-size: 1.75em;
+  text-align: center;
+}
+
+#previous {
+  padding: 10px;
+}
+
+#play-pause {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+#time-control {
+  color:white;
+  padding-bottom: 10px;
+}
+
+#time-control input{
+  color:white;
+  width: 45%;
+  text-align: center;
+}
+
+.current-time{
+  display:inline;
+  padding: 5px;
+}
+
+.total-time {
+  display:inline;
+  padding: 5px;
+}
+
+#volume-control {
+  color:white;
+  display:inline;
+}
+
+
+.ion-volume-low {
+  display:inline;
+  padding: 10px;
+  font-size: 1.5em;
+}
+
+.ion-volume-high {
+  display:inline;
+  padding: 10px;
+  font-size: 1.5em;
+}
+
+
+.player-bar {
+	background-color: #5D001E;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}

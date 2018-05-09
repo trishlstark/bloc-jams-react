@@ -1,21 +1,38 @@
-.App {
-  text-align: center;
+
+
+#navigation-container{
+  background:#5D001E;
+  height: 70px;
+  box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
+
+
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+nav a{
+  float: right;
+  color: #E3E2DF;
+  padding: 10px;
+  margin-top: 15px;
+  margin-left: 10px;
+  text-decoration: none;
+  display: inline;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+nav a:hover{
+  color: grey;
+
 }
+
+#logo{
+  display: inline;
+  height: 70px;
+  float: left;
+
+}
+
 
 .App-title {
-  font-size: 1.5em;
+  font-size: 3em;
 }
 
 .App-intro {
